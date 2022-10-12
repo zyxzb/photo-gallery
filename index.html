@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Galeria zdjęć</title>
+</head>
+
+<body>
+    <h1>Galeria zdjęć</h1>
+    <ul class="gallery">
+        <li class="thumbnail"><img src="images/1.jpg" tabindex="0" alt="Lorem ipsum dolor sit amet."></li>
+        <li class="thumbnail"><img src="images/2.jpg" tabindex="0" alt="Lorem ipsum dolor sit amet."></li>
+        <li class="thumbnail"><img src="images/3.jpg" tabindex="0" alt="Lorem ipsum dolor sit amet."></li>
+        <li class="thumbnail"><img src="images/4.jpg" tabindex="0" alt="Lorem ipsum dolor sit amet."></li>
+        <li class="thumbnail"><img src="images/5.jpg" tabindex="0" alt="Lorem ipsum dolor sit amet."></li>
+        <li class="thumbnail"><img src="images/6.jpg" tabindex="0" alt="Lorem ipsum dolor sit amet."></li>
+        <li class="thumbnail"><img src="images/7.jpg" tabindex="0" alt="Lorem ipsum dolor sit amet."></li>
+        <li class="thumbnail"><img src="images/8.jpg" tabindex="0" alt="Lorem ipsum dolor sit amet."></li>
+        <li class="thumbnail"><img src="images/9.jpg" tabindex="0" alt="Lorem ipsum dolor sit amet."></li>
+        <li class="thumbnail"><img src="images/10.jpg" tabindex="0" alt="Lorem ipsum dolor sit amet."></li>
+        <!-- img source https://unsplash.com -->
+    </ul>
+    <div class="popup hidden">
+        <button class="popup__close" aria-label="zamknij popup">
+            <!-- svg source https://icons.getbootstrap.com/-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill=" currentColor" class="bi bi-x-lg"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg>
+        </button>
+        <button class="popup__arrow-left" aria-label="poprzednie zdjęcie">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+            </svg>
+        </button>
+        <button class="popup__arrow-right" aria-label="następne zdjęcie">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg>
+        </button>
+        <img src="" class="popup__img" alt="">
+    </div>
+    <script src="gallery.js"></script>
+</body>
+
+</html>
